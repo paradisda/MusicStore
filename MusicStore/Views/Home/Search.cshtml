@@ -1,0 +1,20 @@
+﻿
+<h2>@ViewData["Search Results"]</h2>
+
+if(Model.count == 0){
+    console.writeLine("No Results Found");
+}
+else{
+    foreach(Album x in Model){
+        string albumString = albumId + ".jpg";
+        <div class="row searchResult">
+            <div id="image" class="col-md-2">
+                <img src="@~/images/" + albumString/>
+            </div>
+            <div id="right" class="col-md-10">
+                <h2>Title</h2>
+                <p>Artist Year</p>
+            </div>
+        </div>
+    }
+}

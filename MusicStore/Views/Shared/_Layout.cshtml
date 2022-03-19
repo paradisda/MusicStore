@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="~/css/Site.css" rel="stylesheet">
+
+	
+	<!-- Render CSS bundle -->
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top navbar-expand-sm navbar-toggleable-sm">
+        <div class="container">
+            <div class="navbar-header">
+				<a href="/Home/Index" class="navbar-brand">Metal Mania</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="nav navbar-nav">
+					<li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                </ul>
+            </div>
+        </div>
+		</div>
+	</header>
+	
+    <div class="container body-content">
+        <div class="jumbotron">
+            <h1>Metal Forever, Baby!</h1>
+            <p class="lead">Buy, sell, trade your favorite glam and heavy metal albums</p>
+        </div>
+
+    <div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading text-center"><h2>Search Albums</h2></div>
+            <div class="panel-body">
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+
+</div>
+   
+
+
+    </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Metal Mania</p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

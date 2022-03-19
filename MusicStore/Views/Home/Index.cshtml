@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+    <div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading text-center"><h2>Search Albums</h2></div>
+            <div class="panel-body">
+                @using (Html.BeginForm("Search", "Home"))
+                {
+                    <div class="form-group">
+                        <label>Search By:</label>
+						@Html.DropDownList("searchBy", new[] {
+                            new SelectListItem() { Text = "Title", Value = "Title"},
+                            new SelectListItem() { Text = "Artist", Value = "Artist"},
+                            new SelectListItem() { Text = "Year", Value = "Year"}
+    	                 }, "Anything", new { @class = "form-control" }) 
+                   </div>
+                    <div class="form-group">
+                        <label>Search For:</label>
+						    @Html.TextBox("searchText", "", new { @class = "form-control" })
+                    </div>
+
+                    <div class="text-center">
+                        <input class="btn btn-success" type="submit" value="Go!" />
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+
+</div>

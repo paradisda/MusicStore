@@ -1,0 +1,114 @@
+body {
+    padding-bottom: 20px;
+    background-color: #222222;
+    color: #999999;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.panel form {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+footer {
+    border-top: 2px solid cyan;
+    font-family: 'Special Elite';
+    color: darkmagenta;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Metal Mania';
+    color: #999999;
+    padding-top: 1em;
+}
+
+.jumbotron {
+    background-color: darkmagenta;
+    background-image: url(../Images/banner.jpg);
+    background-position: 0% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    margin-bottom: 0px;
+}
+
+.jumbotron h1 {
+    font-family: 'Metal Mania';
+    color: white;
+    text-shadow: 0 0 15px white;
+}
+
+label {
+    font-family: 'Special Elite';
+    color: #999999;
+}
+
+.lead {
+    font-family: 'Special Elite';
+    color: white;
+}
+
+.nav-item {
+    margin-right: 1em;
+}
+
+.navbar 
+{
+    border-bottom: 2px solid cyan;
+    background-color: black;
+}
+
+.navbar-brand
+{
+    font-family: 'Metal Mania';
+    font-size: 36px;
+    color: #999999;
+}
+
+.navbar-nav 
+{
+    font-family: 'Metal Mania';
+    font-size: 24px;
+    float: right;
+    margin-right: 100px;
+}
+
+.navbar-nav a:link
+{
+    color: hotpink;
+}
+
+.panel {
+    background-color: black;
+}
+
+.searchResult h2 {
+    font-family: 'Special Elite';
+    color: white;
+}
+
+.searchResult p {
+    font-family: 'Special Elite';
+}
+
+.searchResult img {
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+}
